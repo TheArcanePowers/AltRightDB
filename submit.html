@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>                                                                                                                       
+		<title>Submit Content</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/dropzone.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Alt-Right</strong> <span>Database</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="archive.html">Archive</a></li>
+							<li><a href="info.html">Info</a></li>
+							<!--<li><a href="elements.html">Elements</a></li>
+							-->
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="submit.html" class="button fit">Submit Videos</a></li>
+							<li><a href="donate.html" class="button primary fit">Help Us</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+						<section id="one">
+							<div class="inner">
+								<header class="major">
+									<h1>File upload</h1>
+								</header>
+								<p>bla bla bla persuasive stuff.</p>
+								<p>If you have any images or videos from Alt-Right events (like rallies or talks).</p>
+								<p>The form only takes 250 files at a time, so you can upload multiple times</p>		
+							
+
+								<!-- Form -->
+								<form method="post" action="upload.php" enctype="multipart/form-data">
+									<div class="row gtr-uniform">
+										<div class="col-12">
+											<input type="text" name="event-name" id="event-name" value="Name of Event" placeholder="Name of Event" required />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="name" id="name" placeholder="Name (optional)" />
+											<input type="email" name="email" id="email" placeholder="Email (optional)" />
+										</div>
+										<!-- Break -->
+										<div class="col-6">
+											<!--<ul class="actions">
+												<li><a href="#" class="button icon solid fa-download">Upload</a></li>
+											</ul>-->
+											<div class="dropzone dz-clickable" id="SubmitDrop">
+												<div class="dz-message">Drop files here or click to upload.
+													<br>
+													<span class="note">(This form accepts images, videos, and .zip & .7z archives.)</span>
+												</div>
+											</div>
+											<div class="dropzone-previews"></div>
+											<div class="fallback">
+												<input name="file" type="file" multiple />
+											</div>
+											<input type="checkbox" id="human-verification" name="human-verification" required />
+											<label for="human-verification">I am a human</label>
+										</div>
+										<!-- Break -->
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Message" rows="3"></textarea>
+											<ul class="actions">
+												<li><input type="submit" id="submit-all "value="Send Message" class="primary" /></li>
+												<li><input type="reset" value="Reset" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</div>
+						</section>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/dropzone.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
